@@ -398,14 +398,14 @@ public class Game extends JFrame {
 		btnRScore.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				resetScore();
-				JOptionPane.showMessageDialog(null, "score reseted!");
+				JOptionPane.showMessageDialog(game, "score reseted!");
 			}
 		});
 		settings.add(btnRScore);
 		btnRScore.setFont(new Font("Yu Gothic UI Semibold", Font.BOLD, 38));
 		btnExit.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				int a=JOptionPane.showConfirmDialog(null, "Are You Sure You Want To EXIT?");
+				int a=JOptionPane.showConfirmDialog(game, "Are You Sure You Want To EXIT?");
 				if(a==0)
 					System.exit(0);
 			}
